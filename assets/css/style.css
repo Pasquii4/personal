@@ -1,0 +1,101 @@
+/* style.css - tema oscuro y minimalista */
+:root{
+  --bg:#0f1115;
+  --card:#121419;
+  --muted:#9aa0a6;
+  --accent:#6ee7b7;
+  --text:#e6eef3;
+  --glass: rgba(255,255,255,0.03);
+  --radius:12px;
+  --maxw:1100px;
+  font-size:16px;
+  font-family: 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:var(--bg);color:var(--text);-webkit-font-smoothing:antialiased; padding-top: 64px;}
+.container{max-width:var(--maxw);margin:0 auto;padding:1.25rem}
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  border-bottom: 1px solid rgba(255,255,255,0.03);
+  backdrop-filter: blur(4px);
+  background: rgba(30, 32, 37, 0.85); 
+}.site-header .container{display:flex;align-items:center;justify-content:space-between;padding:0.75rem 1rem}
+.logo{font-weight:700;letter-spacing:0.2px;color:var(--text);text-decoration:none}
+.nav a{color:var(--muted);margin-right:1rem;text-decoration:none;font-weight:500}
+.nav a:hover{color:var(--text)}
+#theme-toggle{background:transparent;border:0;color:var(--muted);cursor:pointer;font-size:1rem;padding:0.25rem}
+
+.hero{padding:3rem 0}
+.hero-grid{display:grid;grid-template-columns:1fr 320px;gap:2rem;align-items:center}
+.hero-content h1{font-size:2rem;margin-bottom:0.5rem}
+.lead{color:var(--muted);margin-bottom:0.75rem;font-size:1rem}
+
+.hero-card{background:var(--card);padding:1rem;border-radius:var(--radius);display:flex;flex-direction:column;align-items:center;gap:0.75rem}
+.hero-card img{width:160px;height:160px;border-radius:12px;object-fit:cover;background:linear-gradient(135deg,#111,#202020)}
+.contact-list{list-style:none;padding:0;margin:0;width:100%;font-size:0.95rem}
+.contact-list li{padding:0.35rem 0;border-top:1px solid rgba(255,255,255,0.02);width:100%;text-align:center;color:var(--muted)}
+
+.section{padding:2.25rem 0}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1rem}
+.card{background:var(--card);padding:1rem;border-radius:10px;border:1px solid rgba(255,255,255,0.02)}
+
+.projects .project-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1rem;margin-top:1rem}
+.project-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:1rem;border-radius:10px;min-height:140px}
+.project-card h3{margin-bottom:0.5rem}
+
+.skill-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1rem}
+.skill h4{margin-bottom:0.5rem}
+.bar{background:rgba(255,255,255,0.03);border-radius:999px;height:10px;overflow:hidden}
+.progress{height:100%;background:linear-gradient(90deg,var(--accent),#3ad0b1)}
+
+.languages{list-style:none;padding-left:0;margin-top:0.75rem;color:var(--muted)}
+
+.contact-form{background:var(--card);padding:1rem;border-radius:10px;border:1px solid rgba(255,255,255,0.02);display:grid;gap:0.5rem}
+.contact-form label{font-size:0.9rem;color:var(--muted)}
+.contact-form input,.contact-form textarea{background:transparent;border:1px solid rgba(255,255,255,0.03);padding:0.6rem;border-radius:8px;color:var(--text)}
+.form-actions{display:flex;gap:0.5rem;margin-top:0.5rem}
+
+.btn{background:linear-gradient(90deg,var(--accent),#3ad0b1);color:#031012;padding:0.3rem 0.85rem;border-radius:8px;text-decoration:none;font-weight:600;border:10;cursor:pointer}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text)}
+
+.project-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 260px; 
+  padding-bottom: 3.5rem; 
+}
+
+.project-card .btn {
+  position: absolute;
+  left: 50%;
+  bottom: 1.2rem;
+  transform: translateX(-50%);
+  background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--text)
+}
+
+
+
+
+.muted{color:var(--muted)}
+.small{font-size:0.85rem}
+
+.reveal{opacity:0;transform:translateY(10px);transition:all 400ms cubic-bezier(.2,.9,.4,1)}
+
+.site-footer{border-top:1px solid rgba(255,255,255,0.03);padding:1rem 0;margin-top:2rem;background:transparent}
+.site-footer p{color:var(--muted);font-size:0.95rem}
+
+/* Responsive */
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;gap:1rem}
+  .nav a{display:none}
+  .container{padding:1rem}
+}

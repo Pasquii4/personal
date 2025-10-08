@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pau Pascual — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="#">Pau Pascual</a>
+      <nav class="nav">
+        <a href="#about">Sobre mí</a>
+        <a href="#projects">Proyectos</a>
+        <a href="#skills">Habilidades</a>
+        <a href="#contact">Contacto</a>
+        <button id="theme-toggle" aria-label="Toggle theme">🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Hola — soy <strong>Pau Pascual</strong></h1>
+          <p class="lead">Desarrollador Web & Multiplataforma en formación. Apasionado por la programación, la ciberseguridad y las finanzas.</p>
+          <p><strong>Ubicación:</strong> Torrelavit, Barcelona • <strong>Edad:</strong> 19 años</p>
+          <div class="ctas">
+            <a class="btn" href="CV_2.0.pdf" target="_blank">Ver CV (PDF)</a>
+            <a class="btn ghost" href="#contact">Contactar</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="assets/img/avatar-placeholder.png" alt="Avatar (por completar)" />
+          <ul class="contact-list">
+            <li><strong>Email:</strong> pascualpau04@gmail.com</li>
+            <li><strong>Tel:</strong> +34 668 694 897</li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/Pasquii4" target="_blank">github.com/Pasquii4</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about container">
+      <h2>Sobre mí</h2>
+      <p>Estudiante de CFGM Sistemas Micro-informáticos y Redes en el Centre d'Estudis Politècnics Barcelona. Tengo formación en HTML/CSS, Python y experiencia práctica en reparación y atención al cliente.</p>
+      <p><strong>Presentación breve (por completar):</strong> (por completar)</p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Formación</h3>
+          <p>CFGM Sistemas Microinformáticos y Redes — Centre d'estudis Politècnics Barcelona (2023 - 2025)</p>
+          <p>CFGS Desarrollo de Aplicaciones Web - Centre d'estudis Politècnics Barcelona (2025 - Cursando)</p>
+        </div>
+        <div class="card">
+          <h3>Competencias</h3>
+          <p>Python, HTML, CSS, JavaScript (básico), VirtualBox, AutoCAD (por completar)</p>
+        </div>
+        <div class="card">
+          <h3>Objetivos</h3>
+          <p>Generar riqueza, independencia económica y desarrollar proyectos propios. (por completar)</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects container">
+      <h2>Proyectos destacados</h2>
+      <p class="muted">Todos los proyectos están en mi GitHub. Los enlaces llevan al repositorio público.</p>
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <h3>WebProyectoLabdoo</h3>
+          <p>Tecnologías: PHP, HTML, CSS, JavaScript.</p>
+          <p>Web ficticia de empresa  — Basada en una ONG sin animo de lucro dedicada a virtualizar escuelas de bajos recursos.</p>
+          <p><a class="btn" href="https://github.com/Pasquii4/WebProyectoLabdoo" target="_blank">Ver repositorio</a></p>
+        </article>
+
+        <article class="project-card reveal">
+          <h3>Casino (consola)</h3>
+          <p>Tecnologías: Python (consola).</p>
+          <p>Proyecto con varios juegos: coinflip, ruleta, blackjack, slots, carrera de caballos y bingo. Actualmente funcional en consola; pendiente de migración a versión web.</p>
+          <p><a class="btn" href="https://github.com/Pasquii4/Casino" target="_blank">Ver repositorio</a></p>
+        </article>
+
+        <article class="project-card reveal">
+          <h3>Virtual Pet — (consola)</h3>
+          <p>Tecnologías: Java (consola)</p>
+          <p>Proyecto con una interfaz en consola basada en el cuidado de una mascota segun diferentes acciones</p>
+          <p><a class="btn" href="https://github.com/Pasquii4/VirtualPet" target="_blank">Ver repositorio</a></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section skills container">
+      <h2>Habilidades técnicas</h2>
+      <div class="skill-grid">
+        <div class="skill">
+          <h4>HTML / CSS</h4>
+          <div class="bar"><div class="progress" style="width:85%"></div></div>
+        </div>
+        <div class="skill">
+          <h4>Java</h4>
+          <div class="bar"><div class="progress" style="width:60%"></div></div>
+        </div>
+        <div class="skill">
+          <h4>Python</h4>
+          <div class="bar"><div class="progress" style="width:75%"></div></div>
+        </div>
+        <div class="skill">
+          <h4>JavaScript</h4>
+          <div class="bar"><div class="progress" style="width:30%"></div></div>
+        </div>
+      </div>
+
+      <h3>Idiomas</h3>
+      <ul class="languages">
+        <li>Catalán — Nativo</li>
+        <li>Español — Nativo</li>
+        <li>Inglés — B1</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section contact container">
+      <h2>Contacto</h2>
+      <p>¿Quieres contratarme o colaborar? Escribe un mensaje y te responderé.</p>
+
+      <form id="contact-form" class="contact-form" action="por-completar-formspree-o-backend" method="POST">
+        <label for="name">Nombre</label>
+        <input id="name" name="name" required placeholder="Tu nombre (por completar si quieres)">
+
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" required placeholder="tu@email.com">
+
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Hola, me interesa..."></textarea>
+
+        <div class="form-actions">
+          <button type="submit" class="btn">Enviar</button>
+          <button type="reset" class="btn ghost">Limpiar</button>
+        </div>
+        <p class="muted small">Nota: La acción del formulario está en <code>index.html</code> y debe configurarse (por completar).</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Pau Pascual — <a href="https://github.com/Pasquii4" target="_blank">GitHub</a> — <a href="mailto:pascualpau04@gmail.com">pascualpau04@gmail.com</a></p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
