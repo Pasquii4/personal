@@ -35,17 +35,19 @@
 
   document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
 
-  // Contact form basic handler (client-side)
-  const form = document.getElementById('contact-form');
-  if(form){
-    form.addEventListener('submit', (e)=>{
-      // Prevent default for now; user must configure action attribute
-      e.preventDefault();
-      alert('El formulario está preparado pero la acción (endpoint) está por completar.\\nPuedes configurar Formspree o un backend y actualizar el atributo "action" en index.html');
-    });
-  }
+
 
   // year
   const y = new Date().getFullYear();
   document.getElementById('year').textContent = y;
 })();
+document.querySelectorAll('.accordion-toggle').forEach(btn => {
+  btn.addEventListener('click', function() {
+    const item = this.closest('.accordion-item');
+    item.classList.toggle('open');
+    // Cierra otros acordeones en la misma lista
+    item.parentElement.querySelectorAll('.accordion-item').forEach(other => {
+      if (other !== item) other.classList.remove('open');
+    });
+  });
+});
