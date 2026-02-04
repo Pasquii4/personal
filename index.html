@@ -1,32 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pau Pascual - Full-Stack FinTech Developer specializing in Python trading applications and financial technology. Portfolio showcasing real-time market analysis tools.">
-    <meta name="keywords" content="fintech developer, python developer, trading algorithms, barcelona developer, portfolio">
+    <meta name="description"
+        content="Pau Pascual - Full-Stack FinTech Developer specializing in Python trading applications and financial technology. Portfolio showcasing real-time market analysis tools.">
+    <meta name="keywords"
+        content="fintech developer, python developer, trading algorithms, barcelona developer, portfolio">
     <meta name="author" content="Pau Pascual">
-    
+
     <!-- Open Graph / Social Media -->
     <meta property="og:title" content="Pau Pascual - FinTech Developer Portfolio">
-    <meta property="og:description" content="Full-Stack FinTech Developer specializing in Python trading applications and financial technology">
+    <meta property="og:description"
+        content="Full-Stack FinTech Developer specializing in Python trading applications and financial technology">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://pasquii4.github.io/personal/">
-    
+
     <title>Pau Pascual | FinTech Developer</title>
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
     <!-- Grid Background Pattern -->
     <div class="grid-background"></div>
-    
+
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="container nav-container">
@@ -37,19 +44,19 @@
                     <span class="brand-subtitle">FinTech Developer</span>
                 </div>
             </div>
-            
+
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#dashboard" class="nav-link">DASHBOARD</a></li>
                 <li><a href="#portfolio" class="nav-link">PORTFOLIO</a></li>
                 <li><a href="#about" class="nav-link">ABOUT</a></li>
                 <li><a href="#contact" class="nav-link">CONTACT</a></li>
             </ul>
-            
+
             <div class="nav-status">
                 <span class="status-indicator live"></span>
                 <span class="status-text">LIVE</span>
             </div>
-            
+
             <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
                 <span></span>
                 <span></span>
@@ -57,128 +64,173 @@
             </button>
         </div>
     </nav>
-    
-    <!-- Hero Section - Trading Terminal View -->
+
+    <!-- Hero Section - Professional Profile -->
     <section class="hero" id="dashboard">
         <div class="container">
-            <div class="hero-grid">
-                <!-- Market Overview -->
-                <div class="market-overview">
-                    <div class="section-header">
-                        <h2>MARKET OVERVIEW</h2>
-                        <span class="live-badge">LIVE</span>
-                    </div>
-                    
-                    <div class="market-indices">
-                        <div class="index-card" data-symbol="SPY">
-                            <div class="index-header">
-                                <span class="index-name">S&P 500</span>
-                                <span class="index-symbol">SPY</span>
-                            </div>
-                            <div class="index-price" id="spy-price">5,847.15</div>
-                            <div class="index-change positive" id="spy-change">
-                                <span class="change-arrow">▲</span>
-                                <span>+1.2%</span>
-                            </div>
-                            <canvas class="mini-chart" id="chart-spy" width="300" height="80"></canvas>
-                        </div>
-                        
-                        <div class="index-card" data-symbol="QQQ">
-                            <div class="index-header">
-                                <span class="index-name">NASDAQ</span>
-                                <span class="index-symbol">QQQ</span>
-                            </div>
-                            <div class="index-price" id="nasdaq-price">19,234.56</div>
-                            <div class="index-change positive" id="nasdaq-change">
-                                <span class="change-arrow">▲</span>
-                                <span>+0.8%</span>
-                            </div>
-                            <canvas class="mini-chart" id="chart-nasdaq" width="300" height="80"></canvas>
-                        </div>
-                        
-                        <div class="index-card" data-symbol="DIA">
-                            <div class="index-header">
-                                <span class="index-name">DOW JONES</span>
-                                <span class="index-symbol">DIA</span>
-                            </div>
-                            <div class="index-price" id="dow-price">42,156.78</div>
-                            <div class="index-change negative" id="dow-change">
-                                <span class="change-arrow">▼</span>
-                                <span>-0.3%</span>
-                            </div>
-                            <canvas class="mini-chart" id="chart-dow" width="300" height="80"></canvas>
-                        </div>
-                    </div>
-                    
-                    <div class="update-timestamp">
-                        Last updated: <span id="lastUpdate">just now</span>
-                    </div>
-                </div>
-                
-                <!-- Developer Profile Card -->
-                <div class="profile-card">
-                    <div class="profile-avatar">
+            <div class="hero-content">
+                <!-- Main Profile -->
+                <div class="hero-profile">
+                    <div class="profile-avatar-large">
                         <img src="assets/img/avatar.png" alt="Pau Pascual">
+                        <div class="avatar-ring"></div>
                     </div>
-                    
-                    <h1 class="profile-name">PAU PASCUAL</h1>
-                    <p class="profile-title">Full-Stack FinTech Developer</p>
-                    
-                    <div class="profile-info">
-                        <div class="info-item">
+
+                    <h1 class="hero-title">
+                        <span class="hero-greeting">Hello, I'm</span>
+                        <span class="hero-name">PAU PASCUAL</span>
+                    </h1>
+
+                    <p class="hero-subtitle">Full-Stack FinTech Developer</p>
+                    <p class="hero-description">
+                        Specializing in <span class="highlight">Python trading applications</span> and
+                        <span class="highlight">financial technology</span>. Building the future of finance, one line of
+                        code at a time.
+                    </p>
+
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">4+</div>
+                            <div class="stat-label">Proyectos Activos</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">18</div>
+                            <div class="stat-label">Repositorios</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">6</div>
+                            <div class="stat-label">Tecnologías</div>
+                        </div>
+                    </div>
+
+                    <div class="hero-info">
+                        <div class="info-chip">
                             <span class="info-icon">📍</span>
-                            <span>Barcelona, Spain</span>
+                            <span>Barcelona, España</span>
                         </div>
-                        <div class="info-item">
+                        <div class="info-chip">
                             <span class="info-icon">💼</span>
-                            <span>CFGS DAW - In Progress</span>
+                            <span>Estudiante CFGS DAW</span>
                         </div>
-                        <div class="info-item">
-                            <span class="info-icon">🎂</span>
-                            <span>19 years</span>
+                        <div class="info-chip">
+                            <span class="info-icon">🎯</span>
+                            <span>Especialista FinTech</span>
                         </div>
                     </div>
-                    
-                    <div class="tech-badges">
-                        <span class="badge">Python</span>
-                        <span class="badge">JavaScript</span>
-                        <span class="badge">SQL</span>
-                        <span class="badge">Docker</span>
-                    </div>
-                    
-                    <div class="profile-actions">
-                        <a href="CV_2.0.pdf" class="btn btn-primary" download>
-                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                <path d="M8 11L3 6h3V1h4v5h3l-5 5zM1 14h14v2H1v-2z" fill="currentColor"/>
+
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary btn-large">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                            Get In Touch
+                        </a>
+                        <a href="CV_2.0.pdf" class="btn btn-secondary btn-large" download>
+                            <svg width="20" height="20" viewBox="0 0 16 16" fill="none">
+                                <path d="M8 11L3 6h3V1h4v5h3l-5 5zM1 14h14v2H1v-2z" fill="currentColor" />
                             </svg>
                             Download CV
                         </a>
-                        <div class="social-links">
-                            <a href="https://www.linkedin.com/in/pau-pascual-vallverdu/" target="_blank" aria-label="LinkedIn" class="social-link">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                                </svg>
-                            </a>
-                            <a href="https://github.com/Pasquii4" target="_blank" aria-label="GitHub" class="social-link">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                                </svg>
-                            </a>
-                        </div>
+                    </div>
+
+                    <div class="hero-social">
+                        <a href="https://github.com/Pasquii4" target="_blank" aria-label="GitHub" class="social-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/pau-pascual-vallverdu/" target="_blank"
+                            aria-label="LinkedIn" class="social-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg>
+                        </a>
+                        <a href="mailto:pascualpau04@gmail.com" aria-label="Email" class="social-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-icon"></div>
+            <span>Desplázate para explorar</span>
+        </div>
     </section>
-    
+
+    <!-- Market Overview - Moved Below -->
+    <section class="market-overview-section" id="market">
+        <div class="container">
+            <div class="section-header">
+                <h2>MERCADO EN VIVO</h2>
+                <span class="live-badge">DATOS EN DIRECTO</span>
+            </div>
+
+            <div class="market-grid">
+                <div class="index-card" data-symbol="SPY">
+                    <div class="index-header">
+                        <span class="index-name">S&P 500</span>
+                        <span class="index-symbol">SPY</span>
+                    </div>
+                    <div class="index-price" id="spy-price">5,847.15</div>
+                    <div class="index-change positive" id="spy-change">
+                        <span class="change-arrow">▲</span>
+                        <span>+1.2%</span>
+                    </div>
+                    <canvas class="mini-chart" id="chart-spy" width="300" height="80"></canvas>
+                </div>
+
+                <div class="index-card" data-symbol="QQQ">
+                    <div class="index-header">
+                        <span class="index-name">NASDAQ</span>
+                        <span class="index-symbol">QQQ</span>
+                    </div>
+                    <div class="index-price" id="nasdaq-price">19,234.56</div>
+                    <div class="index-change positive" id="nasdaq-change">
+                        <span class="change-arrow">▲</span>
+                        <span>+0.8%</span>
+                    </div>
+                    <canvas class="mini-chart" id="chart-nasdaq" width="300" height="80"></canvas>
+                </div>
+
+                <div class="index-card" data-symbol="DIA">
+                    <div class="index-header">
+                        <span class="index-name">DOW JONES</span>
+                        <span class="index-symbol">DIA</span>
+                    </div>
+                    <div class="index-price" id="dow-price">42,156.78</div>
+                    <div class="index-change negative" id="dow-change">
+                        <span class="change-arrow">▼</span>
+                        <span>-0.3%</span>
+                    </div>
+                    <canvas class="mini-chart" id="chart-dow" width="300" height="80"></canvas>
+                </div>
+            </div>
+
+            <div class="update-timestamp center">
+                Última actualización: <span id="lastUpdate">ahora mismo</span>
+            </div>
+        </div>
+    </section>
+
     <!-- Tech Stack Portfolio -->
     <section class="tech-portfolio" id="portfolio">
         <div class="container">
             <div class="section-header">
-                <h2>TECHNOLOGY PORTFOLIO</h2>
-                <p class="section-subtitle">Skills valued as market positions</p>
+                <h2>PORTAFOLIO TECNOLÓGICO</h2>
+                <p class="section-subtitle">Habilidades valoradas como posiciones de mercado</p>
             </div>
-            
+
             <div class="tech-grid">
                 <div class="tech-card" data-tech="python">
                     <div class="tech-header">
@@ -191,9 +243,9 @@
                         <span>+15.0%</span>
                     </div>
                     <canvas class="tech-chart" width="200" height="60"></canvas>
-                    <div class="tech-description">Primary language for FinTech and trading applications</div>
+                    <div class="tech-description">Lenguaje principal para FinTech y aplicaciones de trading</div>
                 </div>
-                
+
                 <div class="tech-card" data-tech="javascript">
                     <div class="tech-header">
                         <span class="tech-name">JAVASCRIPT</span>
@@ -205,9 +257,9 @@
                         <span>+5.0%</span>
                     </div>
                     <canvas class="tech-chart" width="200" height="60"></canvas>
-                    <div class="tech-description">Modern web development and interactive UIs</div>
+                    <div class="tech-description">Desarrollo web moderno e interfaces interactivas</div>
                 </div>
-                
+
                 <div class="tech-card" data-tech="html-css">
                     <div class="tech-header">
                         <span class="tech-name">HTML/CSS</span>
@@ -219,9 +271,9 @@
                         <span>+10.0%</span>
                     </div>
                     <canvas class="tech-chart" width="200" height="60"></canvas>
-                    <div class="tech-description">Responsive design and modern CSS techniques</div>
+                    <div class="tech-description">Diseño responsive y técnicas CSS modernas</div>
                 </div>
-                
+
                 <div class="tech-card" data-tech="java">
                     <div class="tech-header">
                         <span class="tech-name">JAVA</span>
@@ -233,9 +285,9 @@
                         <span>+8.0%</span>
                     </div>
                     <canvas class="tech-chart" width="200" height="60"></canvas>
-                    <div class="tech-description">Object-oriented programming and enterprise applications</div>
+                    <div class="tech-description">Programación orientada a objetos y aplicaciones empresariales</div>
                 </div>
-                
+
                 <div class="tech-card" data-tech="sql">
                     <div class="tech-header">
                         <span class="tech-name">SQL</span>
@@ -247,9 +299,9 @@
                         <span>+12.0%</span>
                     </div>
                     <canvas class="tech-chart" width="200" height="60"></canvas>
-                    <div class="tech-description">Database design and query optimization</div>
+                    <div class="tech-description">Diseño de bases de datos y optimización de consultas</div>
                 </div>
-                
+
                 <div class="tech-card" data-tech="docker">
                     <div class="tech-header">
                         <span class="tech-name">DOCKER</span>
@@ -261,27 +313,27 @@
                         <span>+20.0%</span>
                     </div>
                     <canvas class="tech-chart" width="200" height="60"></canvas>
-                    <div class="tech-description">Containerization and deployment workflows</div>
+                    <div class="tech-description">Contenedorización y flujos de despliegue</div>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <!-- Trading Desk - Projects -->
     <section class="trading-desk">
         <div class="container">
             <div class="section-header">
-                <h2>RECENT TRADES (PROJECTS)</h2>
+                <h2>OPERACIONES RECIENTES (PROYECTOS)</h2>
                 <div class="desk-controls">
-                    <span>SORT:</span>
+                    <span>ORDENAR:</span>
                     <select class="sort-select">
-                        <option>Date ▼</option>
-                        <option>Performance</option>
-                        <option>Technology</option>
+                        <option>Fecha ▼</option>
+                        <option>Rendimiento</option>
+                        <option>Tecnología</option>
                     </select>
                 </div>
             </div>
-            
+
             <div class="trades-list">
                 <!-- Project 1: DayTrading Scanner -->
                 <div class="trade-card active">
@@ -289,18 +341,18 @@
                         <div class="trade-title">
                             <span class="trade-arrow">▶</span>
                             <h3>DayTrading Scanner</h3>
-                            <span class="position-badge long">LONG POSITION</span>
+                            <span class="position-badge long">POSICIÓN LARGA</span>
                         </div>
                         <div class="trade-status">
                             <span class="status-dot active"></span>
-                            <span>ACTIVE</span>
+                            <span>ACTIVO</span>
                         </div>
                     </div>
-                    
+
                     <div class="trade-metrics">
                         <div class="metric">
-                            <span class="metric-label">Entry:</span>
-                            <span class="metric-value">May 2025</span>
+                            <span class="metric-label">Inicio:</span>
+                            <span class="metric-value">Mayo 2025</span>
                         </div>
                         <div class="metric">
                             <span class="metric-label">Tech:</span>
@@ -311,29 +363,31 @@
                             <span class="metric-value positive">+245%</span>
                         </div>
                         <div class="metric">
-                            <span class="metric-label">Volume:</span>
-                            <span class="metric-value">15,234 lines</span>
+                            <span class="metric-label">Volumen:</span>
+                            <span class="metric-value">15,234 líneas</span>
                         </div>
                         <div class="metric">
-                            <span class="metric-label">Volatility:</span>
-                            <span class="metric-value">Medium</span>
+                            <span class="metric-label">Volatilidad:</span>
+                            <span class="metric-value">Media</span>
                         </div>
                     </div>
-                    
+
                     <div class="performance-bar">
                         <div class="performance-fill" style="width: 85%"></div>
-                        <span class="performance-score">Performance Score: 8.5/10</span>
+                        <span class="performance-score">Puntuación: 8.5/10</span>
                     </div>
-                    
+
                     <p class="trade-description">
-                        Automated stock scanning system for day trading opportunities with real-time alerts and technical indicators.
+                        Sistema automatizado de escaneo de acciones para day trading con alertas en tiempo real e
+                        indicadores técnicos.
                     </p>
-                    
+
                     <div class="trade-actions">
-                        <a href="https://github.com/Pasquii4/DayTrading" target="_blank" class="btn btn-secondary">View Repository</a>
+                        <a href="https://github.com/Pasquii4/DayTrading" target="_blank" class="btn btn-secondary">Ver
+                            Repositorio</a>
                     </div>
                 </div>
-                
+
                 <!-- Project 2: MVP Portfolio Manager -->
                 <div class="trade-card active">
                     <div class="trade-header">
@@ -347,7 +401,7 @@
                             <span>ACTIVE</span>
                         </div>
                     </div>
-                    
+
                     <div class="trade-metrics">
                         <div class="metric">
                             <span class="metric-label">Entry:</span>
@@ -370,21 +424,23 @@
                             <span class="metric-value">High</span>
                         </div>
                     </div>
-                    
+
                     <div class="performance-bar">
                         <div class="performance-fill" style="width: 78%"></div>
                         <span class="performance-score">Performance Score: 7.8/10</span>
                     </div>
-                    
+
                     <p class="trade-description">
-                        Portfolio management application with financial analysis, real-time alerts, and comprehensive performance tracking.
+                        Portfolio management application with financial analysis, real-time alerts, and comprehensive
+                        performance tracking.
                     </p>
-                    
+
                     <div class="trade-actions">
-                        <a href="https://github.com/Pasquii4/MVPPORTFOLIO" target="_blank" class="btn btn-secondary">View Repository</a>
+                        <a href="https://github.com/Pasquii4/MVPPORTFOLIO" target="_blank"
+                            class="btn btn-secondary">View Repository</a>
                     </div>
                 </div>
-                
+
                 <!-- Project 3: Trading Educativo MVP -->
                 <div class="trade-card active">
                     <div class="trade-header">
@@ -398,7 +454,7 @@
                             <span>ACTIVE</span>
                         </div>
                     </div>
-                    
+
                     <div class="trade-metrics">
                         <div class="metric">
                             <span class="metric-label">Entry:</span>
@@ -421,21 +477,23 @@
                             <span class="metric-value">Low</span>
                         </div>
                     </div>
-                    
+
                     <div class="performance-bar">
                         <div class="performance-fill" style="width: 80%"></div>
                         <span class="performance-score">Performance Score: 8.0/10</span>
                     </div>
-                    
+
                     <p class="trade-description">
-                        Educational trading platform designed to teach financial market concepts through interactive simulations.
+                        Educational trading platform designed to teach financial market concepts through interactive
+                        simulations.
                     </p>
-                    
+
                     <div class="trade-actions">
-                        <a href="https://github.com/Pasquii4/TradingEducativoMVP" target="_blank" class="btn btn-secondary">View Repository</a>
+                        <a href="https://github.com/Pasquii4/TradingEducativoMVP" target="_blank"
+                            class="btn btn-secondary">View Repository</a>
                     </div>
                 </div>
-                
+
                 <!-- Project 4: Asistente Financiero -->
                 <div class="trade-card completed">
                     <div class="trade-header">
@@ -449,7 +507,7 @@
                             <span>COMPLETED</span>
                         </div>
                     </div>
-                    
+
                     <div class="trade-metrics">
                         <div class="metric">
                             <span class="metric-label">Entry:</span>
@@ -472,24 +530,25 @@
                             <span class="metric-value">Low</span>
                         </div>
                     </div>
-                    
+
                     <div class="performance-bar">
                         <div class="performance-fill" style="width: 72%"></div>
                         <span class="performance-score">Performance Score: 7.2/10</span>
                     </div>
-                    
+
                     <p class="trade-description">
                         First project in the FinTech sector - stock analysis and financial data aggregation tool.
                     </p>
-                    
+
                     <div class="trade-actions">
-                        <a href="https://github.com/Pasquii4/AsistenteFinanciero" target="_blank" class="btn btn-secondary">View Repository</a>
+                        <a href="https://github.com/Pasquii4/AsistenteFinanciero" target="_blank"
+                            class="btn btn-secondary">View Repository</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
     <!-- Market Sentiment - Tech Trends -->
     <section class="market-sentiment">
         <div class="container">
@@ -497,7 +556,7 @@
                 <h2>TECH MARKET SENTIMENT - LIVE TRENDS</h2>
                 <p class="section-subtitle">Based on GitHub trends, job postings, and Stack Overflow</p>
             </div>
-            
+
             <div class="sentiment-grid">
                 <div class="sentiment-item">
                     <div class="sentiment-header">
@@ -509,7 +568,7 @@
                     </div>
                     <div class="sentiment-value bullish">85% Bullish</div>
                 </div>
-                
+
                 <div class="sentiment-item">
                     <div class="sentiment-header">
                         <span class="sentiment-icon">📈</span>
@@ -520,7 +579,7 @@
                     </div>
                     <div class="sentiment-value bullish">72% Bullish</div>
                 </div>
-                
+
                 <div class="sentiment-item">
                     <div class="sentiment-header">
                         <span class="sentiment-icon">🚀</span>
@@ -531,7 +590,7 @@
                     </div>
                     <div class="sentiment-value bullish">88% Bullish</div>
                 </div>
-                
+
                 <div class="sentiment-item">
                     <div class="sentiment-header">
                         <span class="sentiment-icon">💎</span>
@@ -542,7 +601,7 @@
                     </div>
                     <div class="sentiment-value bullish">65% Bullish</div>
                 </div>
-                
+
                 <div class="sentiment-item">
                     <div class="sentiment-header">
                         <span class="sentiment-icon">⚡</span>
@@ -554,13 +613,13 @@
                     <div class="sentiment-value bullish">68% Bullish</div>
                 </div>
             </div>
-            
+
             <div class="update-timestamp center">
                 Last updated: <span id="sentimentUpdate">2 minutes ago</span>
             </div>
         </div>
     </section>
-    
+
     <!-- About Me - Company Profile -->
     <section class="about" id="about">
         <div class="container">
@@ -568,7 +627,7 @@
                 <div class="section-header">
                     <h2>COMPANY PROFILE: PAU PASCUAL</h2>
                 </div>
-                
+
                 <div class="about-grid">
                     <div class="about-info">
                         <div class="info-row">
@@ -588,16 +647,17 @@
                             <span class="info-value">2023 (Professional Journey)</span>
                         </div>
                     </div>
-                    
+
                     <div class="about-section">
                         <h3>BUSINESS OVERVIEW</h3>
                         <p>
-                            Full-stack developer specializing in financial technology and trading applications. 
-                            Focused on building scalable Python-based systems for market analysis and portfolio management. 
+                            Full-stack developer specializing in financial technology and trading applications.
+                            Focused on building scalable Python-based systems for market analysis and portfolio
+                            management.
                             Currently expanding expertise in web development and modern JavaScript frameworks.
                         </p>
                     </div>
-                    
+
                     <div class="about-section">
                         <h3>CORE COMPETENCIES</h3>
                         <ul class="competencies-list">
@@ -608,7 +668,7 @@
                             <li>Docker & Containerization</li>
                         </ul>
                     </div>
-                    
+
                     <div class="about-section">
                         <h3>CURRENT POSITION</h3>
                         <p>
@@ -616,11 +676,11 @@
                             Centre d'Estudis Politècnics Barcelona (2025 - Present)
                         </p>
                     </div>
-                    
+
                     <div class="about-section">
                         <h3>VISION</h3>
                         <p>
-                            Building a career at the intersection of finance and technology, aiming to create 
+                            Building a career at the intersection of finance and technology, aiming to create
                             innovative solutions that democratize access to financial tools and insights.
                         </p>
                     </div>
@@ -628,7 +688,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Live Metrics Dashboard -->
     <section class="live-metrics">
         <div class="container">
@@ -636,27 +696,27 @@
                 <h2>DEVELOPER ACTIVITY METRICS</h2>
                 <span class="live-badge">LIVE</span>
             </div>
-            
+
             <div class="metrics-grid">
                 <div class="metric-card">
                     <div class="metric-icon">📊</div>
                     <div class="metric-number" id="github-commits">247</div>
                     <div class="metric-label">Commits This Month</div>
                 </div>
-                
+
                 <div class="metric-card">
                     <div class="metric-icon">📁</div>
                     <div class="metric-number" id="github-repos">18</div>
                     <div class="metric-label">Total Repositories</div>
                 </div>
-                
+
                 <div class="metric-card">
                     <div class="metric-icon">💻</div>
                     <div class="metric-number" id="github-languages">6</div>
                     <div class="metric-label">Primary Languages</div>
                 </div>
             </div>
-            
+
             <div class="language-stats">
                 <h3>MOST USED LANGUAGES</h3>
                 <div class="language-bars">
@@ -669,7 +729,7 @@
                             <div class="language-fill" style="width: 67%; background: var(--accent-green);"></div>
                         </div>
                     </div>
-                    
+
                     <div class="language-item">
                         <div class="language-header">
                             <span class="language-name">JavaScript</span>
@@ -679,7 +739,7 @@
                             <div class="language-fill" style="width: 18%; background: var(--accent-blue);"></div>
                         </div>
                     </div>
-                    
+
                     <div class="language-item">
                         <div class="language-header">
                             <span class="language-name">HTML</span>
@@ -689,7 +749,7 @@
                             <div class="language-fill" style="width: 10%; background: var(--accent-gold);"></div>
                         </div>
                     </div>
-                    
+
                     <div class="language-item">
                         <div class="language-header">
                             <span class="language-name">Java</span>
@@ -703,7 +763,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
@@ -711,53 +771,57 @@
                 <h2>READY TO EXECUTE A TRADE?</h2>
                 <p class="section-subtitle">Let's discuss your next FinTech project</p>
             </div>
-            
+
             <div class="contact-grid">
                 <a href="mailto:pascualpau04@gmail.com" class="contact-card">
                     <div class="contact-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                            <polyline points="22,6 12,13 2,6"/>
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                            <polyline points="22,6 12,13 2,6" />
                         </svg>
                     </div>
                     <h3>EMAIL</h3>
                     <p>Send Message</p>
                 </a>
-                
+
                 <a href="https://www.linkedin.com/in/pau-pascual-vallverdu/" target="_blank" class="contact-card">
                     <div class="contact-icon">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
                         </svg>
                     </div>
                     <h3>LINKEDIN</h3>
                     <p>Connect</p>
                 </a>
-                
+
                 <a href="https://github.com/Pasquii4" target="_blank" class="contact-card">
                     <div class="contact-icon">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
                         </svg>
                     </div>
                     <h3>GITHUB</h3>
                     <p>View Code</p>
                 </a>
-                
+
                 <a href="CV_2.0.pdf" download class="contact-card">
                     <div class="contact-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                            <polyline points="14 2 14 8 20 8"/>
-                            <line x1="12" y1="18" x2="12" y2="12"/>
-                            <line x1="9" y1="15" x2="15" y2="15"/>
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                            <polyline points="14 2 14 8 20 8" />
+                            <line x1="12" y1="18" x2="12" y2="12" />
+                            <line x1="9" y1="15" x2="15" y2="15" />
                         </svg>
                     </div>
                     <h3>RESUME</h3>
                     <p>Download PDF</p>
                 </a>
             </div>
-            
+
             <div class="contact-info">
                 <p>
                     <span class="contact-detail">📍 Barcelona, Spain</span>
@@ -769,7 +833,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -778,19 +842,19 @@
                     <span class="status-indicator live"></span>
                     <span>Market Hours: 24/7 Development Cycle Active</span>
                 </div>
-                
+
                 <div class="footer-text">
                     <p>&copy; 2026 Pau Pascual | Built with Passion for FinTech</p>
                     <p class="footer-meta">
-                        Last Deployment: <span id="deploymentTime">Feb 04, 2026</span> | 
+                        Last Deployment: <span id="deploymentTime">Feb 04, 2026</span> |
                         Status: <span class="status-live">● LIVE</span>
                     </p>
                 </div>
-                
+
                 <div class="footer-disclaimer">
                     <p>
                         <small>
-                            Disclaimer: This portfolio is for demonstration purposes. 
+                            Disclaimer: This portfolio is for demonstration purposes.
                             Financial data is for visual context only.
                         </small>
                     </p>
@@ -798,8 +862,9 @@
             </div>
         </div>
     </footer>
-    
+
     <!-- JavaScript -->
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>
