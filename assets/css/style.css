@@ -4,17 +4,17 @@
 
 /* === CSS VARIABLES === */
 :root {
-    /* Colors - Bloomberg Terminal Palette */
-    --bg-primary: #0a0e27;
-    --bg-secondary: #131929;
-    --bg-card: #1a1f3a;
-    --accent-green: #00ff88;
-    --accent-red: #ff4757;
-    --accent-blue: #2e86de;
-    --accent-gold: #ffd700;
-    --text-primary: #e4e4e7;
-    --text-secondary: #a1a1aa;
-    --border-color: #2d3748;
+    /* Colors - Professional FinTech Palette */
+    --bg-primary: #0f172a;
+    --bg-secondary: #1e293b;
+    --bg-card: #334155;
+    --accent-green: #10b981;
+    --accent-red: #ef4444;
+    --accent-blue: #3b82f6;
+    --accent-gold: #f59e0b;
+    --text-primary: #f1f5f9;
+    --text-secondary: #94a3b8;
+    --border-color: #475569;
     --grid-lines: rgba(255, 255, 255, 0.05);
 
     /* Typography */
@@ -1535,4 +1535,235 @@ h4 {
 .reveal.visible {
     opacity: 1;
     transform: translateY(0);
+}
+/* === NEW PROFESSIONAL COMPONENTS === */
+
+/* Tech Expertise Bars */
+.tech-expertise {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin: var(--spacing-md) 0;
+}
+
+.expertise-bar {
+    flex: 1;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.expertise-fill {
+    height: 100%;
+    background: var(--accent-green);
+    border-radius: 4px;
+    transition: width var(--transition-medium);
+}
+
+.expertise-percent {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    color: var(--accent-green);
+    font-weight: 600;
+    min-width: 45px;
+    text-align: right;
+}
+
+.tech-level {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.tech-level.advanced {
+    background: rgba(16, 185, 129, 0.15);
+    color: var(--accent-green);
+    border: 1px solid var(--accent-green);
+}
+
+.tech-level.intermediate {
+    background: rgba(59, 130, 246, 0.15);
+    color: var(--accent-blue);
+    border: 1px solid var(--accent-blue);
+}
+
+.tech-level.basic {
+    background: rgba(245, 158, 11, 0.15);
+    color: var(--accent-gold);
+    border: 1px solid var(--accent-gold);
+}
+
+/* Featured Project Section */
+.featured-project {
+    padding: var(--spacing-xl) 0;
+    background: var(--bg-primary);
+}
+
+.project-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: var(--spacing-lg);
+    transition: var(--transition-medium);
+}
+
+.project-card.featured {
+    border-color: var(--accent-green);
+    box-shadow: 0 0 20px rgba(16, 185, 129, 0.1);
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(16, 185, 129, 0.15);
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: var(--spacing-md);
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+}
+
+.project-title {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.project-title h3 {
+    font-size: 1.75rem;
+    color: var(--accent-green);
+    margin: 0;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.status-badge.active {
+    background: rgba(16, 185, 129, 0.15);
+    color: var(--accent-green);
+    border: 1px solid var(--accent-green);
+}
+
+.project-period {
+    font-family: var(--font-mono);
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.project-description {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin: var(--spacing-md) 0;
+}
+
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+    margin: var(--spacing-lg) 0;
+}
+
+.tech-tag {
+    padding: 0.5rem 1rem;
+    background: rgba(16, 185, 129, 0.1);
+    border: 1px solid rgba(16, 185, 129, 0.3);
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-family: var(--font-mono);
+    color: var(--accent-green);
+}
+
+.project-links {
+    margin-top: var(--spacing-md);
+}
+
+/* Future Projects Section */
+.future-projects {
+    margin-top: var(--spacing-xl);
+    padding: var(--spacing-lg);
+    background: rgba(16, 185, 129, 0.05);
+    border: 1px dashed rgba(16, 185, 129, 0.3);
+    border-radius: 8px;
+}
+
+.future-projects h3 {
+    color: var(--accent-green);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.25rem;
+}
+
+.future-projects p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* Updated About Section Styles */
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-intro {
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-lg);
+}
+
+.about-text {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-lg);
+}
+
+.about-section {
+    margin: var(--spacing-xl) 0;
+}
+
+.about-section h3 {
+    color: var(--accent-green);
+    margin-bottom: var(--spacing-md);
+    font-size: 1.5rem;
+}
+
+.about-section p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-list li {
+    padding: var(--spacing-sm) 0;
+    padding-left: var(--spacing-md);
+    color: var(--text-secondary);
+    position: relative;
+}
+
+.skills-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    color: var(--accent-green);
+    font-size: 1.2rem;
+    line-height: 1;
 }
