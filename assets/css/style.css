@@ -38,6 +38,18 @@ body {
     position: relative;
 }
 
+/* AMBIENT VIDEO BACKGROUND */
+#bg-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -2;
+    pointer-events: none;
+}
+
 /* TERMINAL GRID BACKGROUND */
 body::before {
     content: '';
@@ -473,9 +485,11 @@ h3 {
     0% {
         box-shadow: 0 0 5px rgba(0, 255, 136, 0.2);
     }
+
     50% {
         box-shadow: 0 0 15px rgba(0, 255, 136, 0.6);
     }
+
     100% {
         box-shadow: 0 0 5px rgba(0, 255, 136, 0.2);
     }
