@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
     hamburger.addEventListener('click', () => {
       hamburger.classList.toggle('active');
       navLinks.classList.toggle('active');
+      const isActive = hamburger.classList.contains('active');
+      hamburger.setAttribute('aria-expanded', isActive ? 'true' : 'false');
     });
   }
 
