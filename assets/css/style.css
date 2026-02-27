@@ -469,6 +469,25 @@ h3 {
     border: 1px solid rgba(255, 215, 0, 0.3);
 }
 
+@keyframes pulseGlow {
+    0% {
+        box-shadow: 0 0 5px rgba(0, 255, 136, 0.2);
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(0, 255, 136, 0.6);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(0, 255, 136, 0.2);
+    }
+}
+
+.badge.live {
+    background: rgba(0, 255, 136, 0.15);
+    color: var(--neon-green);
+    border: 1px solid rgba(0, 255, 136, 0.3);
+    animation: pulseGlow 2s infinite;
+}
+
 .project-desc {
     color: var(--text-muted);
     font-size: 0.95rem;
@@ -510,6 +529,13 @@ h3 {
 
 .repo-link:hover {
     color: var(--neon-green);
+}
+
+.repo-link.disabled {
+    opacity: 0.5;
+    pointer-events: none;
+    cursor: not-allowed;
+    text-decoration: none;
 }
 
 /* ABOUT */

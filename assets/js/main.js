@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const langsEl = document.getElementById('github-langs');
 
   const FALLBACK_REPOS = '22';
-  const FALLBACK_LANGS = '6';
+  const FALLBACK_LANGS = '8 lenguajes';
 
   const renderLiveBadge = () => {
     return `<span class="live-badge" title="Datos en vivo de GitHub API">EN VIVO</span>`;
