@@ -13,8 +13,19 @@
     <meta property="og:description"
         content="Portfolio de Pau Pascual. Desarrollador Full-Stack especializado en FinTech, algoritmos de trading, Python y FastAPI.">
     <meta property="og:image" content="https://pasquii4.github.io/personal/assets/img/avatar.png">
+    <meta property="og:image:width" content="400">
+    <meta property="og:image:height" content="400">
+    <meta property="og:image:alt" content="Pau Pascual - FinTech Developer">
     <meta property="og:url" content="https://pasquii4.github.io/personal/">
     <meta property="og:type" content="website">
+    <meta name="author" content="Pau Pascual">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://pasquii4.github.io/personal/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pau Pascual | FinTech & Full-Stack Developer">
+    <meta name="twitter:description"
+        content="Portfolio de Pau Pascual. Desarrollador Full-Stack especializado en FinTech, algoritmos de trading, Python y FastAPI.">
+    <meta name="twitter:image" content="https://pasquii4.github.io/personal/assets/img/avatar.png">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,6 +36,49 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="assets/img/favicon.png">
+
+    <!-- Schema JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Pau Pascual",
+      "alternateName": "Pau Pascual Vallverdú",
+      "jobTitle": "FinTech & Full-Stack Developer",
+      "description": "Desarrollador Full-Stack especializado en FinTech, Python, FastAPI y algoritmos de trading. Basado en Barcelona, España.",
+      "url": "https://pasquii4.github.io/personal/",
+      "email": "pascualpau04@gmail.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Barcelona",
+        "addressRegion": "Catalunya",
+        "addressCountry": "ES"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/pau-pascual-vallverdu/",
+        "https://github.com/Pasquii4"
+      ],
+      "knowsAbout": [
+        "Python", "FastAPI", "FinTech", "Trading Algorithms",
+        "Docker", "SQL", "JavaScript", "TypeScript", "Astro",
+        "Next.js", "Microservices Architecture", "REST APIs"
+      ],
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Centre d'Estudis Politècnics",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Barcelona",
+          "addressCountry": "ES"
+        }
+      }
+    }
+    </script>
 </head>
 
 <body>
@@ -64,40 +118,41 @@
                         <p class="cmd">whoami</p>
                         <h1 class="hero-title">Pau Pascual</h1>
                         <h2 class="hero-subtitle">FinTech & Full-Stack Developer</h2>
-                        <p class="hero-desc">Desarrollador de 19 años basado en Barcelona. Especializado en arquitectura
-                            de software, automatización y algoritmos de trading con Python y FastAPI.</p>
+                        <p class="hero-desc">Construyo sistemas FinTech escalables — Python, FastAPI y algoritmos de
+                            trading en tiempo real. Basado en Barcelona, disponible para prácticas o proyectos
+                            freelance.</p>
 
                         <div class="hero-cta">
                             <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
-                            <a href="CV_2.0.pdf" download class="btn btn-secondary">Descargar CV</a>
+                            <a href="CV_2.0.pdf" download="PauPascual_CV.pdf" class="btn btn-secondary">Descargar CV</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="hero-stats fade-in delay-1">
                     <div class="stat-card">
-                        <div class="stat-icon">📦</div>
+                        <div class="stat-icon" aria-hidden="true">📦</div>
                         <div class="stat-info">
-                            <h3>Repos Públicos</h3>
-                            <p class="stat-value" id="github-repos">Cargando...</p>
+                            <h3>Proyectos</h3>
+                            <p class="stat-value">6 en producción</p>
                         </div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-icon">⚡</div>
+                        <div class="stat-icon" aria-hidden="true">⚡</div>
                         <div class="stat-info">
-                            <h3>Lenguajes</h3>
-                            <p class="stat-value" id="github-langs">Cargando...</p>
+                            <h3>APIs Financieras</h3>
+                            <p class="stat-value text-sm">Polygon · Alpha Vantage</p>
                         </div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-icon">🎓</div>
+                        <div class="stat-icon" aria-hidden="true">🎓</div>
                         <div class="stat-info">
                             <h3>Educación</h3>
                             <p class="stat-value text-sm">CFGS DAW</p>
                         </div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-icon">🌍</div>
+                        <div class="stat-icon" aria-hidden="true">🌍</div>
                         <div class="stat-info">
                             <h3>Base</h3>
                             <p class="stat-value text-sm">Barcelona, ES</p>
@@ -208,69 +263,24 @@
                             <h3 class="project-title">Trading Scanner</h3>
                             <span class="badge in-dev">En Desarrollo</span>
                         </div>
-                        <p class="project-desc">Sistema automatizado de escaneo de mercado para day trading con análisis
-                            técnico en tiempo real y arquitectura modular.</p>
-                        <div class="tech-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">FastAPI</span>
-                            <span class="tag">SQL</span>
-                            <span class="tag">Docker</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="javascript:void(0)" class="repo-link disabled">
-                                🔒 Privado · Bajo solicitud
-                            </a>
-                        </div>
+                        <p class="project-desc">Escanea múltiples activos con indicadores RSI, MACD y volumen en tiempo
+                            real. Arquitectura modular con FastAPI + WebSockets + PostgreSQL. Latencia <300ms en entorno
+                                local.</p>
+                                <div class="tech-tags">
+                                    <span class="tag">Python</span>
+                                    <span class="tag">FastAPI</span>
+                                    <span class="tag">SQL</span>
+                                    <span class="tag">Docker</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="javascript:void(0)" class="repo-link disabled">
+                                        🔒 Privado · Bajo solicitud
+                                    </a>
+                                </div>
                     </div>
 
-                    <!-- 2. Fútbol Manager -->
+                    <!-- 2. RL Boosting ES -->
                     <div class="project-card fade-in delay-1">
-                        <div class="project-header">
-                            <h3 class="project-title">Fútbol Manager</h3>
-                            <span class="badge public">Público</span>
-                        </div>
-                        <p class="project-desc">Aplicación de gestión de equipos y jugadores de fútbol desarrollada con
-                            arquitectura orientada a objetos (OOP) avanzada.</p>
-                        <div class="tech-tags">
-                            <span class="tag">Java</span>
-                            <span class="tag">OOP</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Pasquii4/futbol_manager" target="_blank"
-                                rel="noopener noreferrer" class="repo-link">
-                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="2">
-                                    <path
-                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                                    </path>
-                                </svg>
-                                Ver Código
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- 3. Bet Tracker -->
-                    <div class="project-card fade-in delay-2">
-                        <div class="project-header">
-                            <h3 class="project-title">Bet Tracker</h3>
-                            <span class="badge private">Privado</span>
-                        </div>
-                        <p class="project-desc">Aplicación web de seguimiento de apuestas deportivas con dashboard
-                            visual e inferencia de datos a través de UI de alta fidelidad.</p>
-                        <div class="tech-tags">
-                            <span class="tag">HTML</span>
-                            <span class="tag">CSS</span>
-                            <span class="tag">JavaScript</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="javascript:void(0)" class="repo-link disabled">
-                                🔒 Privado · Bajo solicitud
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- 4. RL Boosting ES -->
-                    <div class="project-card fade-in">
                         <div class="project-header">
                             <h3 class="project-title">RL Boosting ES</h3>
                             <div style="display: flex; gap: 0.5rem; align-items: center;">
@@ -278,8 +288,8 @@
                                 <span class="badge live">Live 🟢</span>
                             </div>
                         </div>
-                        <p class="project-desc">Web de servicio de boosting para Rocket League. Enfocado en la alta
-                            conversión y el rendimiento.</p>
+                        <p class="project-desc">Landing page de servicio de boosting para Rocket League. Desplegada en
+                            Cloudflare Pages · TypeScript + Astro · Optimizada para conversión y Core Web Vitals.</p>
                         <div class="tech-tags">
                             <span class="tag">TypeScript</span>
                             <span class="tag">Next.js / Astro</span>
@@ -295,14 +305,35 @@
                                 </svg>
                                 Ver Código
                             </a>
-                            <a href="https://rlboosting-es.pages.dev/" target="_blank" rel="noopener noreferrer" class="repo-link" style="margin-left: 1rem;">
+                            <a href="https://rlboosting-es.pages.dev/" target="_blank" rel="noopener noreferrer"
+                                class="repo-link" style="margin-left: 1rem;">
                                 🌐 Ver Web
                             </a>
                         </div>
                     </div>
 
-                    <!-- 5. Storefront -->
-                    <div class="project-card fade-in delay-1">
+                    <!-- 3. Bet Tracker -->
+                    <div class="project-card fade-in delay-2">
+                        <div class="project-header">
+                            <h3 class="project-title">Bet Tracker</h3>
+                            <span class="badge private">Privado</span>
+                        </div>
+                        <p class="project-desc">Dashboard de seguimiento de apuestas deportivas con estadísticas de ROI,
+                            racha y Kelly Criterion. Vanilla JS + Chart.js, sin dependencias externas.</p>
+                        <div class="tech-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="javascript:void(0)" class="repo-link disabled">
+                                🔒 Privado · Bajo solicitud
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 4. Tu Espacio Ideal -->
+                    <div class="project-card fade-in">
                         <div class="project-header">
                             <h3 class="project-title">Tu Espacio Ideal</h3>
                             <div style="display: flex; gap: 0.5rem; align-items: center;">
@@ -310,7 +341,8 @@
                                 <span class="badge live">Live 🟢</span>
                             </div>
                         </div>
-                        <p class="project-desc">Storefront de afiliados Amazon (tag: pasqui09-21) con productos de escritorio aesthetic, desplegado en Cloudflare Workers.</p>
+                        <p class="project-desc">Storefront aesthetic de productos para escritorio. SSG con Astro +
+                            Cloudflare Workers. SEO-first y optimizado para conversión.</p>
                         <div class="tech-tags">
                             <span class="tag">Astro</span>
                             <span class="tag">SSG</span>
@@ -319,14 +351,15 @@
                             <a href="javascript:void(0)" class="repo-link disabled">
                                 🔒 Privado · Bajo solicitud
                             </a>
-                            <a href="https://storefront.pasqui.workers.dev/" target="_blank" rel="noopener noreferrer" class="repo-link" style="margin-left: 1rem;">
+                            <a href="https://storefront.pasqui.workers.dev/" target="_blank" rel="noopener noreferrer"
+                                class="repo-link" style="margin-left: 1rem;">
                                 🌐 Ver Web
                             </a>
                         </div>
                     </div>
 
-                    <!-- 6. Casino Python -->
-                    <div class="project-card fade-in delay-2">
+                    <!-- 5. Casino Python -->
+                    <div class="project-card fade-in delay-1">
                         <div class="project-header">
                             <h3 class="project-title">Casino Python</h3>
                             <span class="badge public">Público</span>
@@ -340,6 +373,33 @@
                         <div class="project-links">
                             <a href="https://github.com/Pasquii4/Casino" target="_blank" rel="noopener noreferrer"
                                 class="repo-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                                Ver Código
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 6. Fútbol Manager -->
+                    <div class="project-card fade-in delay-2">
+                        <div class="project-header">
+                            <h3 class="project-title">Fútbol Manager</h3>
+                            <span class="badge public">Público</span>
+                        </div>
+                        <p class="project-desc">Ejercicio académico de gestión de equipos y jugadores. Arquitectura
+                            orientada a objetos avanzada (OOP) — herencia, polimorfismo, encapsulación — en Java puro.
+                        </p>
+                        <div class="tech-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">OOP</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Pasquii4/futbol_manager" target="_blank"
+                                rel="noopener noreferrer" class="repo-link">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                     stroke-width="2">
                                     <path
@@ -374,6 +434,9 @@
                             (arquitectura de bases de datos, APIs RESTful) como en el Front-end (UI atractivas y
                             funcionales en vanilla y con frameworks modernos), asegurando que los requerimientos
                             técnicos y de negocio se cumplan siempre al más alto nivel.</p>
+                        <p>Actualmente <strong>abierto a prácticas o proyectos freelance</strong> en el sector
+                            FinTech/trading. Si buscas un perfil técnico con visión de producto, escríbeme directamente.
+                        </p>
                     </div>
                     <div class="about-image">
                         <img src="assets/img/avatar.png" alt="Pau Pascual" class="avatar" loading="lazy">
@@ -387,8 +450,8 @@
             <div class="container">
                 <h2 class="section-title fade-in">~/contacto</h2>
                 <div class="contact-card fade-in">
-                    <p class="contact-desc">Si estás buscando a un desarrollador proactivo para tu equipo, tienes una
-                        propuesta de proyecto interesante, o simplemente quieres conectar, ¡no dudes en escribirme!</p>
+                    <p class="contact-desc">¿Buscas un desarrollador FinTech para tu equipo o tienes un proyecto técnico
+                        interesante? Escríbeme directamente — respondo en menos de 24h.</p>
 
                     <div class="contact-links">
                         <a href="mailto:pascualpau04@gmail.com" class="contact-btn">
@@ -430,10 +493,11 @@
 
     <footer class="footer">
         <div class="container footer-content">
-            <p>&copy; 2026 Pau Pascual. Creado con vanilla HTML/CSS/JS.</p>
+            <p>&copy; 2026 Pau Pascual · <a href="https://github.com/Pasquii4/personal" target="_blank" rel="noopener"
+                    style="color: inherit; text-decoration: underline; opacity: 0.6;">Código fuente</a></p>
             <div class="footer-links">
                 <a href="#dashboard">Volver arriba</a>
-                <a href="CV_2.0.pdf" download>CV</a>
+                <a href="CV_2.0.pdf" download="PauPascual_CV.pdf">CV</a>
             </div>
         </div>
     </footer>

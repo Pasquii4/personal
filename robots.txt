@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /CV.pdf
+Disallow: /CV_2.0.pdf
+
+Sitemap: https://pasquii4.github.io/personal/sitemap.xml
