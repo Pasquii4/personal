@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (hamburger.classList.contains('active')) {
         hamburger.classList.remove('active');
         navLinks.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
       }
     });
   });
@@ -107,5 +108,72 @@ document.addEventListener('DOMContentLoaded', () => {
   //   };
   // 
   //   fetchGithubData();
+
+  // --- SCROLL PROGRESS BAR ---
+  const progressBar = document.createElement('div');
+  progressBar.id = 'scroll-progress';
+  document.body.prepend(progressBar);
+
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+    progressBar.style.width = progress + '%';
+  });
+
+  // --- ACTIVE NAV HIGHLIGHT ---
+  const sections = document.querySelectorAll('section[id]');
+
+  const sectionObserverOptions = {
+    root: null,
+    rootMargin: '-40% 0px -55% 0px',
+    threshold: 0
+  };
+
+  const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinksItems.forEach(link => link.classList.remove('active'));
+        const activeLink = document.querySelector(`.nav-link[href="#${entry.target.id}"]`);
+        if (activeLink) activeLink.classList.add('active');
+      }
+    });
+  }, sectionObserverOptions);
+
+  sections.forEach(section => sectionObserver.observe(section));
+
+  // --- TYPEWRITER EFFECT ---
+  function typeWriter(element, text, speed, callback) {
+    element.textContent = '';
+    let i = 0;
+    const timer = setInterval(() => {
+      element.textContent += text[i];
+      i++;
+      if (i >= text.length) {
+        clearInterval(timer);
+        if (callback) callback();
+      }
+    }, speed);
+  }
+
+  const heroTitle = document.querySelector('.hero-title');
+  const heroSubtitle = document.querySelector('.hero-subtitle');
+  if (heroTitle && heroSubtitle) {
+    const titleText = heroTitle.textContent.trim();
+    const subtitleText = heroSubtitle.textContent.trim();
+    heroTitle.textContent = '';
+    heroSubtitle.textContent = '';
+    // Esperar a que la página esté visible
+    setTimeout(() => {
+      typeWriter(heroTitle, titleText, 60, () => {
+        // Añadir cursor parpadeante
+        const cursor = document.createElement('span');
+        cursor.classList.add('cursor-blink');
+        cursor.textContent = '_';
+        heroTitle.appendChild(cursor);
+        typeWriter(heroSubtitle, subtitleText, 40, null);
+      });
+    }, 400);
+  }
 
 });

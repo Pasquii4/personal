@@ -219,6 +219,12 @@ h3 {
     color: var(--neon-green);
 }
 
+.nav-link.active {
+    color: var(--neon-green);
+    border-bottom: 1px solid var(--neon-green);
+    padding-bottom: 2px;
+}
+
 .hamburger {
     display: none;
     background: none;
@@ -317,6 +323,26 @@ h3 {
     margin-bottom: 1.5rem;
 }
 
+.cursor-blink {
+    display: inline-block;
+    color: var(--neon-green);
+    animation: blink 1s step-end infinite;
+    margin-left: 2px;
+    font-weight: 400;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
 .hero-desc {
     color: var(--text-muted);
     font-size: 1.1rem;
@@ -396,6 +422,13 @@ h3 {
     padding: 1.5rem;
     border-radius: 8px;
     border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.skill-card:hover {
+    border-color: rgba(77, 166, 255, 0.3);
+    box-shadow: 0 0 20px rgba(77, 166, 255, 0.08);
+    transform: translateY(-2px);
+    transition: var(--transition);
 }
 
 .skill-header {
@@ -496,6 +529,21 @@ h3 {
     background: rgba(255, 215, 0, 0.1);
     color: var(--gold);
     border: 1px solid rgba(255, 215, 0, 0.3);
+    animation: pulseGold 2s infinite;
+}
+
+@keyframes pulseGold {
+    0% {
+        box-shadow: 0 0 5px rgba(255, 215, 0, 0.2);
+    }
+
+    50% {
+        box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+    }
+
+    100% {
+        box-shadow: 0 0 5px rgba(255, 215, 0, 0.2);
+    }
 }
 
 @keyframes pulseGlow {
@@ -596,6 +644,13 @@ h3 {
 
 .about-text strong {
     color: var(--text-main);
+}
+
+.lang-badges {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    margin-top: 1rem;
 }
 
 .about-image {
@@ -719,6 +774,18 @@ h3 {
 }
 
 /* RESPONSIVE */
+#scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: linear-gradient(90deg, var(--neon-green), var(--neon-blue));
+    z-index: 9999;
+    transition: width 0.1s linear;
+    pointer-events: none;
+}
+
 @media (max-width: 992px) {
     .grid-hero {
         grid-template-columns: 1fr;
@@ -781,6 +848,10 @@ h3 {
 
     .hero-stats {
         grid-template-columns: 1fr;
+    }
+
+    #bg-video {
+        display: none;
     }
 
     .contact-links {
