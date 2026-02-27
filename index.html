@@ -4,546 +4,451 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pau Pascual | FinTech & Full-Stack Developer</title>
+
+    <!-- SEO & Social Meta Tags -->
     <meta name="description"
-        content="Pau Pascual - Full-Stack FinTech Developer. Portfolio showcasing Trading Scanner project with real-time market analysis. Currently studying CFGS DAW in Barcelona, Spain.">
-    <meta name="keywords"
-        content="fintech developer, python developer, trading algorithms, barcelona developer, portfolio">
-    <meta name="author" content="Pau Pascual">
-
-    <!-- Open Graph / Social Media -->
-    <meta property="og:title" content="Pau Pascual - FinTech Developer Portfolio">
+        content="Portfolio de Pau Pascual. Desarrollador Full-Stack especializado en FinTech, algoritmos de trading, Python y FastAPI.">
+    <meta property="og:title" content="Pau Pascual | FinTech Developer">
     <meta property="og:description"
-        content="Full-Stack FinTech Developer specializing in Python trading applications and financial technology">
-    <meta property="og:type" content="website">
+        content="Portfolio de Pau Pascual. Desarrollador Full-Stack especializado en FinTech, algoritmos de trading, Python y FastAPI.">
+    <meta property="og:image" content="https://pasquii4.github.io/personal/assets/img/avatar.png">
     <meta property="og:url" content="https://pasquii4.github.io/personal/">
+    <meta property="og:type" content="website">
 
-    <title>Pau Pascual | FinTech Developer</title>
-
-    <!-- Google Fonts -->
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@500;700&display=swap"
         rel="stylesheet">
 
-    <!-- Stylesheet -->
+    <!-- Styles -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <!-- Grid Background Pattern -->
-    <div class="grid-background"></div>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container nav-wrapper">
+            <a href="#" class="brand"><span>$</span>Pau_Pascual</a>
 
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="container nav-container">
-            <div class="nav-brand">
-                <span class="brand-symbol">$</span>
-                <div class="brand-text">
-                    <span class="brand-name">PAU PASCUAL</span>
-                    <span class="brand-subtitle">FinTech Developer</span>
+            <button class="hamburger" aria-label="Abrir menú">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <nav class="nav-links">
+                <a href="#dashboard" class="nav-link">~/dashboard</a>
+                <a href="#stack" class="nav-link">~/tech-stack</a>
+                <a href="#projects" class="nav-link">~/proyectos</a>
+                <a href="#about" class="nav-link">~/sobre-mi</a>
+                <a href="#contact" class="nav-link">~/contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero / Dashboard Section -->
+        <section id="dashboard" class="hero section">
+            <div class="container grid-hero">
+                <div class="hero-content fade-in">
+                    <div class="terminal-header">
+                        <span class="dot red"></span>
+                        <span class="dot gold"></span>
+                        <span class="dot green"></span>
+                        <span class="terminal-title">bash - pascualpau04@localhost</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p class="cmd">whoami</p>
+                        <h1 class="hero-title">Pau Pascual</h1>
+                        <h2 class="hero-subtitle">FinTech & Full-Stack Developer</h2>
+                        <p class="hero-desc">Desarrollador de 19 años basado en Barcelona. Especializado en arquitectura
+                            de software, automatización y algoritmos de trading con Python y FastAPI.</p>
+
+                        <div class="hero-cta">
+                            <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
+                            <a href="CV_2.0.pdf" download class="btn btn-secondary">Descargar CV</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-stats fade-in delay-1">
+                    <div class="stat-card">
+                        <div class="stat-icon">📦</div>
+                        <div class="stat-info">
+                            <h3>Repositorios</h3>
+                            <p class="stat-value" id="github-repos">Cargando...</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">⚡</div>
+                        <div class="stat-info">
+                            <h3>Lenguajes</h3>
+                            <p class="stat-value" id="github-langs">Cargando...</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🎓</div>
+                        <div class="stat-info">
+                            <h3>Educación</h3>
+                            <p class="stat-value text-sm">CFGS DAW</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon">🌍</div>
+                        <div class="stat-info">
+                            <h3>Base</h3>
+                            <p class="stat-value text-sm">Barcelona, ES</p>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </section>
 
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#dashboard" class="nav-link">INICIO</a></li>
-                <li><a href="#portfolio" class="nav-link">PORTAFOLIO</a></li>
-                <li><a href="#about" class="nav-link">SOBRE MÍ</a></li>
-                <li><a href="#contact" class="nav-link">CONTACTO</a></li>
-            </ul>
-
-            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </nav>
-
-    <!-- Hero Section - Professional Profile -->
-    <section class="hero" id="dashboard">
-        <div class="container">
-            <div class="hero-content">
-                <!-- Main Profile -->
-                <div class="hero-profile">
-                    <div class="profile-avatar-large">
-                        <img src="assets/img/avatar.png" alt="Pau Pascual">
-                        <div class="avatar-ring"></div>
-                    </div>
-
-                    <h1 class="hero-title">
-                        <span class="hero-greeting">Hola, soy</span>
-                        <span class="hero-name">PAU PASCUAL</span>
-                    </h1>
-
-                    <p class="hero-subtitle">Desarrollador Full-Stack especializado en aplicaciones FinTech</p>
-                    <p class="hero-description">
-                        Enfocado en <span class="highlight">tecnología de trading</span> y
-                        <span class="highlight">APIs financieras</span>. Actualmente estudiando CFGS Desarrollo de
-                        Aplicaciones Web mientras construyo soluciones FinTech reales. Apasionado por el aprendizaje
-                        continuo y la creación de herramientas escalables e innovadoras en la intersección de finanzas
-                        y tecnología.
-                    </p>
-
-                    <div class="hero-stats">
-                        <div class="stat-item">
-                            <div class="stat-number" id="active-projects">1</div>
-                            <div class="stat-label">Proyecto Principal</div>
+        <!-- Tech Stack Section -->
+        <section id="stack" class="stack section">
+            <div class="container">
+                <h2 class="section-title fade-in">~/tech-stack</h2>
+                <div class="stack-grid">
+                    <!-- Python -->
+                    <div class="skill-card fade-in">
+                        <div class="skill-header">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-pct">85%</span>
                         </div>
-                        <div class="stat-item">
-                            <div class="stat-number" id="github-repos-hero">18</div>
-                            <div class="stat-label">Repositorios</div>
-                        </div>
-                        <div class="stat-item">
-                            <div class="stat-number" id="tech-count">6+</div>
-                            <div class="stat-label">Tecnologías</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="85%"></div>
                         </div>
                     </div>
+                    <!-- HTML/CSS -->
+                    <div class="skill-card fade-in delay-1">
+                        <div class="skill-header">
+                            <span class="skill-name">HTML/CSS</span>
+                            <span class="skill-pct">90%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="90%"></div>
+                        </div>
+                    </div>
+                    <!-- SQL -->
+                    <div class="skill-card fade-in delay-2">
+                        <div class="skill-header">
+                            <span class="skill-name">SQL</span>
+                            <span class="skill-pct">80%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="80%"></div>
+                        </div>
+                    </div>
+                    <!-- Docker -->
+                    <div class="skill-card fade-in">
+                        <div class="skill-header">
+                            <span class="skill-name">Docker</span>
+                            <span class="skill-pct">75%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="75%"></div>
+                        </div>
+                    </div>
+                    <!-- FastAPI -->
+                    <div class="skill-card fade-in delay-1">
+                        <div class="skill-header">
+                            <span class="skill-name">FastAPI</span>
+                            <span class="skill-pct">72%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="72%"></div>
+                        </div>
+                    </div>
+                    <!-- JavaScript / TypeScript -->
+                    <div class="skill-card fade-in delay-2">
+                        <div class="skill-header">
+                            <span class="skill-name">JS / TS</span>
+                            <span class="skill-pct">70%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="70%"></div>
+                        </div>
+                    </div>
+                    <!-- Java -->
+                    <div class="skill-card fade-in">
+                        <div class="skill-header">
+                            <span class="skill-name">Java</span>
+                            <span class="skill-pct">65%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="65%"></div>
+                        </div>
+                    </div>
+                    <!-- Astro / Next.js -->
+                    <div class="skill-card fade-in delay-1">
+                        <div class="skill-header">
+                            <span class="skill-name">Astro / Next.js</span>
+                            <span class="skill-pct">60%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-width="60%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                    <div class="hero-info">
-                        <div class="info-chip">
-                            <span class="info-icon">📍</span>
-                            <span>Barcelona, España</span>
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <h2 class="section-title fade-in">~/proyectos</h2>
+                <div class="projects-grid">
+
+                    <!-- 1. Trading Scanner -->
+                    <div class="project-card fade-in">
+                        <div class="project-header">
+                            <h3 class="project-title">Trading Scanner</h3>
+                            <span class="badge in-dev">En Desarrollo</span>
                         </div>
-                        <div class="info-chip">
-                            <span class="info-icon">💼</span>
-                            <span>Estudiante CFGS DAW</span>
+                        <p class="project-desc">Sistema automatizado de escaneo de mercado para day trading con análisis
+                            técnico en tiempo real y arquitectura modular.</p>
+                        <div class="tech-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">SQL</span>
+                            <span class="tag">Docker</span>
                         </div>
-                        <div class="info-chip">
-                            <span class="info-icon">🎯</span>
-                            <span>Especialista FinTech</span>
+                        <div class="project-links">
+                            <a href="https://github.com/Pasquii4/Trading_Scanner" target="_blank"
+                                rel="noopener noreferrer" class="repo-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                                Repositorio Privado
+                            </a>
                         </div>
                     </div>
 
-                    <div class="hero-actions">
-                        <a href="#contact" class="btn btn-primary btn-large">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                                <polyline points="22,6 12,13 2,6" />
-                            </svg>
-                            Conectar
-                        </a>
-                        <a href="CV_2.0.pdf" class="btn btn-secondary btn-large" download>
-                            <svg width="20" height="20" viewBox="0 0 16 16" fill="none">
-                                <path d="M8 11L3 6h3V1h4v5h3l-5 5zM1 14h14v2H1v-2z" fill="currentColor" />
-                            </svg>
-                            Descargar CV
-                        </a>
+                    <!-- 2. Fútbol Manager -->
+                    <div class="project-card fade-in delay-1">
+                        <div class="project-header">
+                            <h3 class="project-title">Fútbol Manager</h3>
+                            <span class="badge public">Público</span>
+                        </div>
+                        <p class="project-desc">Aplicación de gestión de equipos y jugadores de fútbol desarrollada con
+                            arquitectura orientada a objetos (OOP) avanzada.</p>
+                        <div class="tech-tags">
+                            <span class="tag">Java</span>
+                            <span class="tag">OOP</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Pasquii4/futbol_manager" target="_blank"
+                                rel="noopener noreferrer" class="repo-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                                Ver Código
+                            </a>
+                        </div>
                     </div>
 
-                    <div class="hero-social">
-                        <a href="https://github.com/Pasquii4" target="_blank" aria-label="GitHub" class="social-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                            </svg>
-                        </a>
-                        <a href="https://www.linkedin.com/in/pau-pascual-vallverdu/" target="_blank"
-                            aria-label="LinkedIn" class="social-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                <path
-                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                            </svg>
-                        </a>
-                        <a href="mailto:pascualpau04@gmail.com" aria-label="Email" class="social-icon">
+                    <!-- 3. Bet Tracker -->
+                    <div class="project-card fade-in delay-2">
+                        <div class="project-header">
+                            <h3 class="project-title">Bet Tracker</h3>
+                            <span class="badge private">Privado</span>
+                        </div>
+                        <p class="project-desc">Aplicación web de seguimiento de apuestas deportivas con dashboard
+                            visual e inferencia de datos a través de UI de alta fidelidad.</p>
+                        <div class="tech-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Pasquii4/bettracker" target="_blank" rel="noopener noreferrer"
+                                class="repo-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                                Repositorio
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 4. RL Boosting ES -->
+                    <div class="project-card fade-in">
+                        <div class="project-header">
+                            <h3 class="project-title">RL Boosting ES</h3>
+                            <span class="badge public">Público</span>
+                        </div>
+                        <p class="project-desc">Web de servicio de boosting para Rocket League. Enfocado en la alta
+                            conversión y el rendimiento.</p>
+                        <div class="tech-tags">
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">Next.js / Astro</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Pasquii4/RLBoosting_es" target="_blank"
+                                rel="noopener noreferrer" class="repo-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                                Ver Código
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 5. Storefront -->
+                    <div class="project-card fade-in delay-1">
+                        <div class="project-header">
+                            <h3 class="project-title">Storefront</h3>
+                            <span class="badge private">Privado</span>
+                        </div>
+                        <p class="project-desc">Tienda online moderna y rápida implementada sobre Astro para maximizar
+                            las métricas Web Vitals, el SEO y asegurar bajas latencias.</p>
+                        <div class="tech-tags">
+                            <span class="tag">Astro</span>
+                            <span class="tag">SSG</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Pasquii4/storefront" target="_blank" rel="noopener noreferrer"
+                                class="repo-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                                Repositorio
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- 6. Casino Python -->
+                    <div class="project-card fade-in delay-2">
+                        <div class="project-header">
+                            <h3 class="project-title">Casino Python</h3>
+                            <span class="badge public">Público</span>
+                        </div>
+                        <p class="project-desc">Juego de casino multi-modal con lógica de apuestas complejas
+                            desarrollado enteramente en Python usando estado y concurrencia simple.</p>
+                        <div class="tech-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Game Logic</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Pasquii4/Casino" target="_blank" rel="noopener noreferrer"
+                                class="repo-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                    </path>
+                                </svg>
+                                Ver Código
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section-title fade-in">~/sobre-mi</h2>
+                <div class="about-content grid-about fade-in">
+                    <div class="about-text">
+                        <p>Soy un desarrollador de software enfocado en construir herramientas fiables, escalables y
+                            optimizadas. Actualmente estoy cursando el <strong>CFGS de Desarrollo de Aplicaciones
+                                Web</strong> en el Centre d'Estudis Politècnics en Barcelona, ampliando y estructurando
+                            mi base de ingeniería de software.</p>
+                        <p>Mi principal área de interés y especialización es la industria <strong>FinTech y los
+                                algoritmos de trading</strong>. Empleo tecnologías modernas como <strong>Python, FastAPI
+                                y SQL</strong> para diseñar arquitecturas de microservicios resilientes, capturar datos
+                            en tiempo real mediante integraciones de APIs (como Alpha Vantage o Polygon), y desarrollar
+                            sistemas automatizados de análisis de mercados.</p>
+                        <p>A lo largo de los años he fortalecido mis habilidades trabajando tanto en el Back-end
+                            (arquitectura de bases de datos, APIs RESTful) como en el Front-end (UI atractivas y
+                            funcionales en vanilla y con frameworks modernos), asegurando que los requerimientos
+                            técnicos y de negocio se cumplan siempre al más alto nivel.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="assets/img/avatar.png" alt="Pau Pascual" class="avatar" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <h2 class="section-title fade-in">~/contacto</h2>
+                <div class="contact-card fade-in">
+                    <p class="contact-desc">Si estás buscando a un desarrollador proactivo para tu equipo, tienes una
+                        propuesta de proyecto interesante, o simplemente quieres conectar, ¡no dudes en escribirme!</p>
+
+                    <div class="contact-links">
+                        <a href="mailto:pascualpau04@gmail.com" class="contact-btn">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                 stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                                <polyline points="22,6 12,13 2,6" />
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                </path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
                             </svg>
+                            pascualpau04@gmail.com
+                        </a>
+                        <a href="https://www.linkedin.com/in/pau-pascual-vallverdu/" target="_blank"
+                            rel="noopener noreferrer" class="contact-btn linkedin">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                            LinkedIn
+                        </a>
+                        <a href="https://github.com/Pasquii4" target="_blank" rel="noopener noreferrer"
+                            class="contact-btn github">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                </path>
+                            </svg>
+                            GitHub
                         </a>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+    </main>
 
-        <!-- Scroll Indicator -->
-        <div class="scroll-indicator">
-            <div class="scroll-icon"></div>
-            <span>Desplázate para explorar</span>
-        </div>
-    </section>
-
-    <!-- Tech Stack Portfolio -->
-    <section class="tech-portfolio" id="portfolio">
-        <div class="container">
-            <div class="section-header">
-                <h2>STACK TECNOLÓGICO</h2>
-                <p class="section-subtitle">Tecnologías y herramientas con las que trabajo</p>
-            </div>
-
-            <div class="tech-grid">
-                <div class="tech-card" data-tech="python">
-                    <div class="tech-header">
-                        <span class="tech-name">PYTHON</span>
-                        <span class="tech-level advanced">Avanzado</span>
-                    </div>
-                    <div class="tech-expertise">
-                        <div class="expertise-bar">
-                            <div class="expertise-fill" style="width: 85%"></div>
-                        </div>
-                        <span class="expertise-percent">85%</span>
-                    </div>
-                    <div class="tech-description">Lenguaje principal para FinTech y aplicaciones de trading</div>
-                </div>
-
-                <div class="tech-card" data-tech="javascript">
-                    <div class="tech-header">
-                        <span class="tech-name">JAVASCRIPT</span>
-                        <span class="tech-level intermediate">Intermedio</span>
-                    </div>
-                    <div class="tech-expertise">
-                        <div class="expertise-bar">
-                            <div class="expertise-fill" style="width: 70%"></div>
-                        </div>
-                        <span class="expertise-percent">70%</span>
-                    </div>
-                    <div class="tech-description">Desarrollo web moderno e interfaces interactivas</div>
-                </div>
-
-                <div class="tech-card" data-tech="html-css">
-                    <div class="tech-header">
-                        <span class="tech-name">HTML/CSS</span>
-                        <span class="tech-level advanced">Avanzado</span>
-                    </div>
-                    <div class="tech-expertise">
-                        <div class="expertise-bar">
-                            <div class="expertise-fill" style="width: 90%"></div>
-                        </div>
-                        <span class="expertise-percent">90%</span>
-                    </div>
-                    <div class="tech-description">Diseño responsive y técnicas CSS modernas</div>
-                </div>
-
-                <div class="tech-card" data-tech="java">
-                    <div class="tech-header">
-                        <span class="tech-name">JAVA</span>
-                        <span class="tech-level intermediate">Intermedio</span>
-                    </div>
-                    <div class="tech-expertise">
-                        <div class="expertise-bar">
-                            <div class="expertise-fill" style="width: 65%"></div>
-                        </div>
-                        <span class="expertise-percent">65%</span>
-                    </div>
-                    <div class="tech-description">Programación orientada a objetos y aplicaciones empresariales</div>
-                </div>
-
-                <div class="tech-card" data-tech="sql">
-                    <div class="tech-header">
-                        <span class="tech-name">SQL</span>
-                        <span class="tech-level advanced">Avanzado</span>
-                    </div>
-                    <div class="tech-expertise">
-                        <div class="expertise-bar">
-                            <div class="expertise-fill" style="width: 80%"></div>
-                        </div>
-                        <span class="expertise-percent">80%</span>
-                    </div>
-                    <div class="tech-description">Diseño de bases de datos y optimización de consultas</div>
-                </div>
-
-                <div class="tech-card" data-tech="docker">
-                    <div class="tech-header">
-                        <span class="tech-name">DOCKER</span>
-                        <span class="tech-level intermediate">Intermedio</span>
-                    </div>
-                    <div class="tech-expertise">
-                        <div class="expertise-bar">
-                            <div class="expertise-fill" style="width: 75%"></div>
-                        </div>
-                        <span class="expertise-percent">75%</span>
-                    </div>
-                    <div class="tech-description">Contenedorización y flujos de despliegue</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Featured Project -->
-    <section class="featured-project">
-        <div class="container">
-            <div class="section-header">
-                <h2>PROYECTO PRINCIPAL</h2>
-                <p class="section-subtitle">Desarrollo activo en FinTech y trading technology</p>
-            </div>
-
-            <!-- DayTrading Scanner -->
-            <div class="project-card featured">
-                <div class="project-header">
-                    <div class="project-title">
-                        <h3>Trading Scanner</h3>
-                        <span class="status-badge active">En Desarrollo Activo</span>
-                    </div>
-                    <div class="project-period">2025 - Presente</div>
-                </div>
-
-                <p class="project-description">
-                    Sistema automatizado de escaneo de mercado para day trading con análisis técnico en tiempo real.
-                    Integra múltiples APIs financieras (Alpha Vantage, Polygon) para procesamiento de datos,
-                    alertas personalizadas y visualización de oportunidades de trading.
-                    Arquitectura modular en Python con enfoque en escalabilidad y rendimiento.
-                </p>
-
-                <div class="project-tech">
-                    <div class="tech-tag">Python</div>
-                    <div class="tech-tag">FastAPI</div>
-                    <div class="tech-tag">SQL</div>
-                    <div class="tech-tag">Docker</div>
-                    <div class="tech-tag">Financial APIs</div>
-                </div>
-
-                <div class="project-links">
-                    <a href="https://github.com/Pasquii4/Trading_Scanner" target="_blank" class="btn btn-primary">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                        </svg>
-                        Ver Repositorio
-                    </a>
-                </div>
-            </div>
-
-            <!-- Future Projects -->
-            <div class="future-projects">
-                <h3>Ideas & Concepts en Exploración</h3>
-                <p>
-                    Además del proyecto principal, mantengo una fase continua de investigación privada
-                    explorando conceptos en integración de AI para análisis financiero, optimización de
-                    estrategias de trading, y herramientas avanzadas de gestión de portafolio.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Me -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="about-card">
-                <div class="section-header">
-                    <h2>SOBRE MÍ</h2>
-                </div>
-
-                <div class="about-content">
-                    <p class="about-intro">
-                        Soy Pau Pascual, desarrollador full-stack especializado en tecnología financiera.
-                        Mi pasión radica en la intersección entre finanzas y tecnología, donde combino
-                        conocimientos de mercados financieros con desarrollo de software para crear
-                        herramientas prácticas y escalables.
-                    </p>
-
-                    <p class="about-text">
-                        Actualmente estoy cursando el <strong>CFGS en Desarrollo de Aplicaciones Web</strong> en el
-                        Centre d'Estudis Politècnics Barcelona, donde profundizo mis conocimientos
-                        en tecnologías web modernas mientras mantengo mi enfoque en el sector FinTech.
-                    </p>
-
-                    <div class="about-section">
-                        <h3>Experiencia y Habilidades</h3>
-                        <p>
-                            Mi experiencia práctica incluye integración de APIs financieras (Alpha Vantage,
-                            Polygon, yFinance), desarrollo de sistemas de análisis técnico en tiempo real,
-                            y arquitectura de aplicaciones escalables con Python, FastAPI, y Docker.
-                        </p>
-                        <ul class="skills-list">
-                            <li>Integración de APIs financieras y procesamiento de datos de mercado</li>
-                            <li>Desarrollo de algoritmos de trading y análisis técnico</li>
-                            <li>Arquitectura backend con Python, FastAPI y bases de datos SQL</li>
-                            <li>Desarrollo frontend con HTML, CSS y JavaScript moderno</li>
-                            <li>Despliegue y contenedorización con Docker</li>
-                        </ul>
-                    </div>
-
-                    <div class="about-section">
-                        <h3>Visión Profesional</h3>
-                        <p>
-                            Busco continuamente oportunidades de crecimiento profesional en equipos que
-                            valoren la innovación, el aprendizaje constante, y la creación de soluciones
-                            de impacto en el mundo de las finanzas. Mi objetivo es contribuir al desarrollo
-                            de tecnología que democratice el acceso a herramientas financieras sofisticadas.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Métricas de Actividad -->
-    <section class="live-metrics">
-        <div class="container">
-            <div class="section-header">
-                <h2>MÉTRICAS DE ACTIVIDAD</h2>
-                <span class="live-badge">EN VIVO</span>
-            </div>
-
-            <div class="metrics-grid">
-                <div class="metric-card">
-                    <div class="metric-icon">📊</div>
-                    <div class="metric-number" id="github-commits">247</div>
-                    <div class="metric-label">Commits Este Mes</div>
-                </div>
-
-                <div class="metric-card">
-                    <div class="metric-icon">📁</div>
-                    <div class="metric-number" id="github-repos">18</div>
-                    <div class="metric-label">Repositorios Totales</div>
-                </div>
-
-                <div class="metric-card">
-                    <div class="metric-icon">💻</div>
-                    <div class="metric-number" id="github-languages">6</div>
-                    <div class="metric-label">Lenguajes Principales</div>
-                </div>
-            </div>
-
-            <div class="language-stats">
-                <h3>LENGUAJES MÁS UTILIZADOS</h3>
-                <div class="language-bars">
-                    <div class="language-item">
-                        <div class="language-header">
-                            <span class="language-name">Python</span>
-                            <span class="language-percent">67%</span>
-                        </div>
-                        <div class="language-bar">
-                            <div class="language-fill" style="width: 67%; background: var(--accent-green);"></div>
-                        </div>
-                    </div>
-
-                    <div class="language-item">
-                        <div class="language-header">
-                            <span class="language-name">JavaScript</span>
-                            <span class="language-percent">18%</span>
-                        </div>
-                        <div class="language-bar">
-                            <div class="language-fill" style="width: 18%; background: var(--accent-blue);"></div>
-                        </div>
-                    </div>
-
-                    <div class="language-item">
-                        <div class="language-header">
-                            <span class="language-name">HTML</span>
-                            <span class="language-percent">10%</span>
-                        </div>
-                        <div class="language-bar">
-                            <div class="language-fill" style="width: 10%; background: var(--accent-gold);"></div>
-                        </div>
-                    </div>
-
-                    <div class="language-item">
-                        <div class="language-header">
-                            <span class="language-name">Java</span>
-                            <span class="language-percent">5%</span>
-                        </div>
-                        <div class="language-bar">
-                            <div class="language-fill" style="width: 5%; background: var(--accent-red);"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección de Contacto -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>¿LISTO PARA CONECTAR?</h2>
-                <p class="section-subtitle">Hablemos sobre tu próximo proyecto FinTech</p>
-            </div>
-
-            <div class="contact-grid">
-                <a href="mailto:pascualpau04@gmail.com" class="contact-card">
-                    <div class="contact-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                            <polyline points="22,6 12,13 2,6" />
-                        </svg>
-                    </div>
-                    <h3>EMAIL</h3>
-                    <p>Enviar Mensaje</p>
-                </a>
-
-                <a href="https://www.linkedin.com/in/pau-pascual-vallverdu/" target="_blank" class="contact-card">
-                    <div class="contact-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                        </svg>
-                    </div>
-                    <h3>LINKEDIN</h3>
-                    <p>Conectar</p>
-                </a>
-
-                <a href="https://github.com/Pasquii4" target="_blank" class="contact-card">
-                    <div class="contact-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
-                            <path
-                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                        </svg>
-                    </div>
-                    <h3>GITHUB</h3>
-                    <p>Ver Código</p>
-                </a>
-
-                <a href="CV_2.0.pdf" download class="contact-card">
-                    <div class="contact-icon">
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                            <polyline points="14 2 14 8 20 8" />
-                            <line x1="12" y1="18" x2="12" y2="12" />
-                            <line x1="9" y1="15" x2="15" y2="15" />
-                        </svg>
-                    </div>
-                    <h3>CURRÍCULUM</h3>
-                    <p>Descargar PDF</p>
-                </a>
-            </div>
-
-            <div class="contact-info">
-                <p>
-                    <span class="contact-detail">📍 Barcelona, España</span>
-                    <span class="contact-separator">|</span>
-                    <span class="contact-detail">📞 +34 668 694 897</span>
-                    <span class="contact-separator">|</span>
-                    <span class="contact-detail">✉️ pascualpau04@gmail.com</span>
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-status">
-                    <span class="status-indicator live"></span>
-                    <span>Ciclo de Desarrollo Activo 24/7</span>
-                </div>
-
-                <div class="footer-text">
-                    <p>&copy; 2026 Pau Pascual | Construido con Pasión por FinTech</p>
-                    <p class="footer-meta">
-                        Última Actualización: <span id="deploymentTime">04 Feb, 2026</span> |
-                        Estado: <span class="status-live">● EN VIVO</span>
-                    </p>
-                </div>
-
-                <div class="footer-disclaimer">
-                    <p>
-                        <small>
-                            Aviso: Este portfolio es con fines demostrativos.
-                            Los datos financieros son solo para contexto visual.
-                        </small>
-                    </p>
-                </div>
+        <div class="container footer-content">
+            <p>&copy; 2026 Pau Pascual. Creado con vanilla HTML/CSS/JS.</p>
+            <div class="footer-links">
+                <a href="#dashboard">Volver arriba</a>
+                <a href="CV_2.0.pdf" download>CV</a>
             </div>
         </div>
     </footer>
 
-    <!-- JavaScript -->
+    <!-- Scripts -->
     <script src="assets/js/main.js"></script>
 </body>
 
